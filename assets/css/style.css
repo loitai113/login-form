@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4e545d;
+    background-image: url(/assets/images/background.png);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form {
+    display: block;
+    position: relative;
+    background-color: #f1f2f4;
+    width: 90%;
+    max-width: 475px;
+    height: 475px;
+    border-radius: 3px;
+    box-shadow: inset 0 -2px 0 rgba(23, 16, 25, 0.2),
+                0 1px 3px rgba(23, 16, 25, 0.75);
+    padding: 0 45px;
+}
+
+#clip {
+    position: absolute;
+    bottom: calc(100% - 23px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#clip:after {
+    content: '';
+    display: block;
+    width: 111px;
+    height: 5px;
+    background-color: #4e545d;
+    border-radius: 5px;
+    box-shadow: 0 -2px 0 rgba(23, 16, 25, 0.2),
+                inset 0 1px 3px rgba(23, 16, 25, 0.75);
+}
+
+#clip img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 4px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #36383c;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 3px; 
+}
+
+p {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: #7c818b;
+    margin-bottom: 44px;
+}
+
+.form-input {
+    display: block;
+    box-shadow: inset 0 1px 3px rgba(23, 16, 25, 0.45), 0 2px 0 #fff;
+    border: 1px solid #c3c5c7;
+    border-radius: 3px;
+    background-color: #e5e7e9;
+}
+
+.email-input,
+.password-input {
+    display: block;
+    width: calc(100% - 2px);
+    margin: 0 auto;
+    outline: none;
+    height: 85px;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: #6f7278;
+    padding-left: 74px;
+    padding-right: 24px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.email-input {
+    background-image: url(/assets/images/mail.png);
+    background-position-x: 24px;
+    border-bottom: 1px solid #bec0c2;
+}
+
+.password-input {
+    height: 84px;
+    background-image: url(/assets/images/lock.png);
+    background-position-x: 28px;
+    border-top: 1px solid #fff;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 74px;
+    margin-top: 27px;
+    outline: none;
+    background-image: url(/assets/images/btn-bg.png);
+    font-size: 36px;
+    color: #fff;
+    border: 1px solid #2a8b7b;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.4),
+                0 1px 3px rgba(0, 0, 0, 0.3);
+}
